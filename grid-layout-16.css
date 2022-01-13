@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+
+}
+h1 {
+  font-family: inherit;
+  margin-left: 50%;
+  color: white;
+  font-size: 100px;
+
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto; /* le nombre de auto determine le nombre de colonne choisis*/
+  grid-gap: 16px;
+  row-gap:24px;
+  column-gap: 30px;
+}
+
+.poster {
+  width:350px;
+  height:550px;
+
+}
+
+@media (max-width: 900px) { /* pour les tablette on utilise média avec une largeur de 900px max et on copie le grid pour qu'il n'y ai que 3 colonnes sur tablette */
+  #grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
